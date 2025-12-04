@@ -1,6 +1,6 @@
 {% extends 'learning_logs/base.html' %}
 
-% block page_header %}
+{% block page_header %}
  <h1>{{ topic.text }}</h1>
 {% endblock page_header %}
 
@@ -11,7 +11,7 @@
 <p>Entries:</p>
 <p>
     <a href="{% url 'learning_logs:new_entry' topic.id %}">Add new entry</a>
-</p
+</p>
 <ul>
     {% for entry in entries %}
         <div class="card mb-3">
